@@ -1,16 +1,11 @@
 import axios from 'axios';
 
 
-const harvardUrl = 'https://api.harvardartmuseums.org/object?apikey=ff36a900-994b-11e9-b0f8-fd4ea10c147a&title=rabbit&classification=Paintings'
-const APIKEY = 'ff36a900-994b-11e9-b0f8-fd4ea10c147a'
+const GeekJokes = 'https://geek-jokes.sameerkumar.website/api'
 
 
-export const API_harvard = async () => {
-
-
-  const resp = await axios.get(
-    `${harvardUrl}?`);
-
+export const API_GeekJokes = async () => {
+  const resp = await axios.get(`${GeekJokes}`);
   return resp.data;
 }
 

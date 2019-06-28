@@ -1,15 +1,8 @@
 import React, { Component } from 'react'
-import { API_harvard } from '../services/API';
+import { API_GeekJokes } from '../services/API';
 
 export default class SmallCard extends Component {
-
-  componentDidMount = () => {
-    API_harvard()
-      .then(r => console.log(r))
-      .catch(e => console.log(e))
-  }
-
-  render() {
+   render() {
     return (
       <div className="smallCard">
         {/* <img className="smallImg" src={` `} alt="" /> */}
