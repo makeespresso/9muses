@@ -15,13 +15,12 @@ This is a project build in React for the Software Engineering Immersive program 
 * CSS
 
 ### API reference 
-https://www.boredapi.com/
+https://geek-jokes.sameerkumar.website/api
+https://github.com/harvardartmuseums/api-docs
+https://www.etsy.com/developers/documentation/getting_started/api_basics 
 
-
-
-
-
-
+### Wireframes
+--
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
