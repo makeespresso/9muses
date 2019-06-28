@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default () => {
   return (
-    <navbar id="navbar">
+    <div id="navbar">
       <Link to="/"><h1>9musesnav.</h1></Link>
       <section id="Links">
         <Link to="/Discover">Discover</Link>
@@ -13,7 +13,7 @@ export default () => {
         <Link to="/AboutUs">About 9 muses</Link>
 
       </section>
-    </navbar>
+    </div>
   )
 }
 

@@ -24,3 +24,17 @@
 #Links:hover { 
   background-color: red;
 } 
+
+.smallImg{
+  width: 128px;
+  height: auto;
+  border-radius: 100px;
+}
+
+.smallCard{
+background-color:lightcoral;
+padding: 15px;
+width:100vw;
+display: flex;
+flex-flow: row wrap;
+}
