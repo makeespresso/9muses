@@ -1,14 +1,26 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
 .App {
-  text-align: center;
-  background: goldenrod;
+
+  background-color: goldenrod;
 }
 
+#navbar{
+  margin: 3rem;
+  text-align: center;
+}
 
-.App-header {
+#Links{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+#Links:hover { 
+  background-color: red;
+} 

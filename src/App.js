@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import {random_act} from './services/random_act'
+// import { random_act } from './services/random_act'
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Routes from './Routes'
+
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h2>9 muses</h2>
-        </header>
+      <Navbar />
+      <Routes />
+      <Footer />
     </div>
   );
 }
