@@ -20,6 +20,8 @@ https://github.com/harvardartmuseums/api-docs
 https://www.etsy.com/developers/documentation/getting_started/api_basics 
 
 ### Wireframes
+<img width="1024" alt="page1" src="https://user-images.githubusercontent.com/20978259/60345209-7b036c00-9986-11e9-8bec-63e01ea56ff1.png">
+
 --
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
