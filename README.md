@@ -1,11 +1,9 @@
 
-## 9muses 
-
-This is a project build in React for the Software Engineering Immersive program at General Assemby.
+## 9muses
+This is a project for the Software Engineering Immersive program at General Assembly.
 
 ### About 9 muses
-
-9muses is inspired in different digital media resources with a knack on women in the tech space, providing news, articles, art, music and other resources. 
+9muses is inspired by different digital media resources providing news, articles, art, music and other resources.
 
 ### Tech/framework used
 <b>built with:</b>
@@ -14,17 +12,24 @@ This is a project build in React for the Software Engineering Immersive program 
 * JavaScript
 * CSS
 
-### API reference 
-https://geek-jokes.sameerkumar.website/api
-https://github.com/harvardartmuseums/api-docs
-https://www.etsy.com/developers/documentation/getting_started/api_basics 
+### API reference
+https://developers.artsy.net/
+
+#### Purposes
+* Visitors will receive updated content from different resources.
+* Visitors will be able to search for art and authors
+
+#### Components
+9muses has different sections: Discover, Articles, Music and About us, each one of these is links are linked to different routers that ultimately are being called under <Routes /> in the App.js
+
+#### Features
+Friendly to use designs
+search bar for authors and categories
 
 ### Wireframes
-Main/landing page
+* Main/landing page
 <img width="1024" alt="page1" src="https://user-images.githubusercontent.com/20978259/60345209-7b036c00-9986-11e9-8bec-63e01ea56ff1.png">
 
-Discover Section
+*Discover Section
 <img width="1093" alt="page2" src="https://user-images.githubusercontent.com/20978259/60345618-6e334800-9987-11e9-9e68-77f9ec1c9e06.png">
 
-
---
