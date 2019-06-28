@@ -15,10 +15,6 @@ export const API_GeekJokes = async () => {
 
 
 
-
-
-
-
 //FOR FUTURE APIS //
 // const news = axios.create({
 //   baseURL: 'https://some-domain.com/api/'
