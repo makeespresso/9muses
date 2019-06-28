@@ -22,6 +22,8 @@ https://www.etsy.com/developers/documentation/getting_started/api_basics
 ### Wireframes
 <img width="1024" alt="page1" src="https://user-images.githubusercontent.com/20978259/60345209-7b036c00-9986-11e9-8bec-63e01ea56ff1.png">
 
+<img width="1093" alt="page2" src="https://user-images.githubusercontent.com/20978259/60345618-6e334800-9987-11e9-9e68-77f9ec1c9e06.png">
+
 --
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
