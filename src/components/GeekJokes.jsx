@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { API_GeekJokes } from '../services/API';
+import SmallCard from './SmallCard';
 
 export default class GeekJokes extends Component {
   constructor() {
@@ -30,7 +31,7 @@ export default class GeekJokes extends Component {
       <div>
         <h1>something</h1>
         {this.state.gotJokes === true ?
-<p>{this.state.jokes[0]}</p>
+          <SmallCard data={this.state.jokes} type="joke" />
           : null}
       </div>
     )
