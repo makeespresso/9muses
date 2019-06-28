@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { API_GeekJokes } from '../services/API';
 import SmallCard from './SmallCard';
+import { getArtsyToken, getArtist } from '../services/artsyAPI';
 
 export default class GeekJokes extends Component {
   constructor() {
@@ -11,7 +12,11 @@ export default class GeekJokes extends Component {
     }
   }
 
-  componentDidMount = () => {
+  componentDidMount = async () => {
+    await getArtist("andy-warhol")
+      .then(r => console.log(r))
+      .catch(e => console.log(e))
+
     for (let i = 0; i < 11; i++) {
       API_GeekJokes()
         .then(r => {
@@ -25,6 +30,7 @@ export default class GeekJokes extends Component {
         .catch(e => console.log(e))
     }
   }
+
 
   render() {
     return (
