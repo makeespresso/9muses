@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import LandingPage from './components/LandingPage';
-import GeekJokes from './components/GeekJokes';
+import Discover from './components/Discover';
 // import Home from './components/Home';
 // import AllB from './components/beers/All';
 // import RandomB from './components/beers/Random';
@@ -11,7 +11,7 @@ const Routes = () => {
   return (
     <Switch>
       <Route exact path="/" component={LandingPage} />
-      <Route exact path="/GeekJokes" component={GeekJokes} />
+      <Route exact path="/Discover" component={Discover} />
       <Route exact path="/Music" component={LandingPage} />
       <Route exact path="/Articles" component={LandingPage} />
       <Route exact path="/AboutUs" component={LandingPage} />

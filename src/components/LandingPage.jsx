@@ -6,7 +6,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <section>
-        <h1>ALL MIGHTY LANDING PAGE!</h1>
+        <h1>Landing page</h1>
         <HeadArticles />
         <FillArticles />
       </section>

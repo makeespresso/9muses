@@ -4,7 +4,7 @@
 }
 .App {
 
-  background-color: goldenrod;
+  background-color: rgb(224, 183, 243);
 }
 
 #navbar{
@@ -22,9 +22,12 @@
 }
 
 #Links:hover { 
-  background-color: red;
+  background-color: rgb(254, 206, 209);
 } 
-
+.cover-image{
+  height: 50%;
+  width: 100%;
+}
 .smallImg{
   width: 128px;
   height: auto;
@@ -32,7 +35,7 @@
 }
 
 .smallCard{
-background-color:lightcoral;
+background-color: whitesmoke;
 padding: 15px;
 width:100vw;
 display: flex;

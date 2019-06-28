@@ -29,7 +29,7 @@ export default class GeekJokes extends Component {
   render() {
     return (
       <div>
-        <h1>something</h1>
+        <h1>Discover</h1>
         {this.state.gotJokes === true ?
           <SmallCard data={this.state.jokes} type="joke" />
           : null}

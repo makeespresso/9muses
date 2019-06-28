@@ -11,7 +11,6 @@ export default class FillArticles extends Component {
         <SmallCard />
         <SmallCard />
         <SmallCard />
-      
       </div>
     )
   }
