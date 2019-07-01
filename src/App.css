@@ -124,15 +124,19 @@ background-size: cover;
 /*I N S I D E - A R T I C L E S - S E C T I O N */
 .third-div{
   margin: 0 auto;
-  /* background-color: yellow; */
+  background-color: yellow;
   height: 25vh;
   padding: 15px;
   border: solid 3px black;
-  padding: 15px;
-  margin: 0 auto;
   margin-top: 15px;
   margin-left: 15px;
   margin-right: 15px;
+
+  display: block;
+  width: 100%;
+  min-width: 500px;
+  margin: 2px 0 0;
+  overflow: hidden;
 }
 
 .article-img{
@@ -161,7 +165,6 @@ small{
   font-weight: 400px;
 }
 
-
 /* M U S I C - S E C T I O N  */
 .hero-img1{
 background-image: url('/img/section-music.jpeg');
@@ -181,11 +184,6 @@ background-size: cover;
   position: relative;
 }
 .music-video{
-  /* overflow:hidden; */
-  /* position:relative;
-  display: flex;
-  padding: 25px; */
-
   position:relative;
   display:flex;
   top:0;
@@ -193,21 +191,33 @@ background-size: cover;
   width:100%;
   max-height:500px;
   margin:0;
-  overflow-y:auto; 
-  /* overflow-x:hidden; */
-  /* transform:rotate() translateY(-80px); */
-  /* transform-origin:right top; */
-  
-
+  overflow-y:auto;
+  padding: 30px;
+  background-color: aqua;
 }
 
+      /*  S C R O L L - B A R  */
+      /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(230, 234, 235); 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(253, 134, 114); 
+  border-radius: 2px;
+}
 
-
-
-
-
-
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(251, 199, 145); 
+}
 
 /* F O O T E R  */
 footer h1{
