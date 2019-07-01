@@ -1,10 +1,19 @@
 const axios = require('axios');
-const TOKEN = '6c1999def68ffc7ecee084a9b1d94735.'
+// const TOKEN = '6c1999def68ffc7ecee084a9b1d94735'
+const TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IiIsImV4cCI6MTU2MjU5ODczOSwiaWF0IjoxNTYxOTkzOTM5LCJhdWQiOiI1ZDE2MmFlMTAyYzRmZDAwMGRmM2NlZmYiLCJpc3MiOiJHcmF2aXR5IiwianRpIjoiNWQxYTIyZDNmZDA0YmQwMDBlMDg4OWRiIn0.7SCuDfaf8E15mQSQLvGlE04IXCV_ORMzc6lCI5LgST0'
+
+// export const getArtsyToken = async () => {
+//   const resp = await axios.post(`https://api.artsy.net/api/tokens/xapp_token?client_id=e7478287740db362b7de&client_secret=${TOKEN}`);
+//   debugger;
+//   return resp.data.token;
+// }
+
+// getArtsyToken()
 
 const api = axios.create({
   baseURL: 'https://api.artsy.net/api',
   headers: {
-    'Authorization': `Bearer ${TOKEN}`
+    'X-Xapp-Token': TOKEN
   }
 });
 
@@ -19,15 +28,10 @@ const api = axios.create({
 //     .catch(b => b.response)
 // }
 
-const artsyName = "9muses"
-let artsyToken;
+// const artsyName = "9muses"
+// let artsyToken;
 
 
-export const getArtsyToken = async () => {
-  return await axios.post("https://api.artsy.net/api/tokens/xapp_token?client_id=e7478287740db362b7de&client_secret=6c1999def68ffc7ecee084a9b1d94735")
-    .then(a => a)
-    .catch(b => b.response)
-}
 
 // const API_Artsy = axios.create({
 //   baseURL: 'https://api.artsy.net/api',
@@ -37,20 +41,22 @@ export const getArtsyToken = async () => {
 // });
 
 export const getArtist = async (artist) => {
-  getArtsyToken()
-    .then(a => {
-      artsyToken = a.data.token
-      api.get("https://api.artsy.net/api/artists/" + artist, { headers: { 'X-Xapp-Token': artsyToken } })
-        // api.get("/artist")
-        .then(a => {
-          console.log(a)
-          return a
-        })
-        .catch(e => console.log(e))
-    })
-
+  // api.headers = {
+  //   'X-Xapp-Token': getArtsyToken()
+  // }
+  const artistData = await api.get("/artists/" + artist)
+  return artistData.data
 }
 
+export const getShows = async () => {
+  // api.headers = {
+  //   'X-Xapp-Token': getArtsyToken()
+  // }
+  const showData = await api.get("/shows?status=upcoming")
+  debugger;
+  console.log(showData.data._embedded.shows)
+  return showData.data._embedded.shows
+}
 
 
 

@@ -5,7 +5,7 @@ const GeekJokes = 'https://geek-jokes.sameerkumar.website/api'
 
 
 export const API_GeekJokes = async () => {
-  const resp = await axios.get(`${GeekJokes}`);
+  const resp = await axios.get(`${GeekJokes}`)
   return resp.data;
 }
 

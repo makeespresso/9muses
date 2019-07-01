@@ -4,9 +4,9 @@ import { API_GeekJokes } from '../services/API';
 export default class SmallCard extends Component {
   render() {
     //let jokesArray = Object.values(this.props)  //i need to take out the values of this props. <- not using this bcs returns one array inside another one [[...]]
-    //console.log(this.props.jokes)
-    let { data, type } = this.props
-    console.log(data, type)      // <<== type will be used to have a conditional rendering of the data
+    console.log(this.props)
+    // let { data, type } = this.props
+    // console.log(data, type)      // <<== type will be used to have a conditional rendering of the data
     return (
       <div className="smallCard">
         {

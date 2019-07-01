@@ -3,9 +3,11 @@ import React, { Component } from 'react'
 export default class News extends Component {
   render() {
     return (
-      <div className="news-section">
-        <h1><a href="http://viewport.surge.sh/" target="_blank">ViewPort News</a></h1>
-        </div>
+      <div className="hero-img">
+        <h1><a href="http://viewport.surge.sh/" target="_blank">Viewport News</a></h1>
+        <img src="/img/viewport-news-img.jpeg"></img>
+      </div>
     )
   }
 }
+

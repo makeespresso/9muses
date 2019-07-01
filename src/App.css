@@ -4,21 +4,33 @@
   margin: 0%;
 }
 .App {
-
-  background-color: rgb(224, 183, 243);
+  font-family: 'Assistant', sans-serif;
+  background-color: white;
 }
 a:visited{ 
-  text-decoration: none;
+  color: rgb(190, 208, 202);
 }
 a:hover{
-  color: whitesmoke;
-  background: black ;
+  color: rgb(190, 208, 202);
   text-decoration: none;
 }
 a:active{
   color: black;
   text-decoration: none;
 }
+.hero-img img{
+  height: 500px;
+  width: 100%;
+  object-fit: cover; 
+  }
+  
+  .hero-img h1{
+    color: white;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3em;
+    padding-top: 350px;
+    position: absolute;
+  }
 /* L O G O  */
 .logo {
   font-family: 'Playfair Display', serif;
@@ -29,12 +41,14 @@ a:active{
   text-transform: none;
   font-size: 3rem;
   color: black;
-  text-decoration: solid overline lightseagreen;
+  text-decoration: solid overline rgb(165, 178, 181);
 }
 
 #navbar{
   margin: 3rem;
   text-align: center;
+  color: rgb(17, 72, 17);
+
 }
 
 #Links{
@@ -46,9 +60,6 @@ a:active{
   color: white;
 }
 
-#Links:hover { 
-  background-color: rgb(254, 206, 209);
-} 
 .cover-image{
   height: 50%;
   width: 100%;
@@ -67,6 +78,13 @@ display: flex;
 flex-flow: row wrap;
 }
 
+/* H E A D - A R T I C L E S  */
+.pink{
+  height: 300px;
+  width: 100%;
+  background: pink;
+}
+
  /* A R T I C L E S */
  .articles-section{
    background-color: lightcyan;
@@ -74,23 +92,7 @@ flex-flow: row wrap;
    width: 100%;
    align-content: space-between;
  }
- .hero-img{
-background-image: url('https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
-height: 500px;
-width: 100%;
-background-position: center; /* Center the image */
-background-repeat: no-repeat; /* Do not repeat the image */
-background-size: cover; 
- }
  
-  .hero-img h1{
-color: white;
-font-family: 'DM Serif Display', serif;
-font-size: 3em;
-padding-left: 30px;
-padding-top: 30%;
-position: relative;
-}
   .articles-text{
 background-color:whitesmoke;
 height: 100vh;
@@ -123,25 +125,20 @@ background-size: cover;
 
 /*I N S I D E - A R T I C L E S - S E C T I O N */
 .third-div{
-  margin: 0 auto;
   background-color: yellow;
   height: 25vh;
-  padding: 15px;
+  padding: 5px;
   border: solid 3px black;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-
   display: block;
-  width: 100%;
+  width: 70vw;
   min-width: 500px;
   margin: 2px 0 0;
   overflow: hidden;
 }
-
+/* 
 .article-img{
   margin-left: 60px;
-}
+} */
 
 .article-img img{
 float: left;
@@ -166,23 +163,7 @@ small{
 }
 
 /* M U S I C - S E C T I O N  */
-.hero-img1{
-background-image: url('/img/section-music.jpeg');
-height: 500px;
-width: 100%;
-background-position: center; 
-background-repeat: no-repeat;
-background-size: cover; 
-}
 
-.hero-img1 h1{
-  color: white;
-  font-family: 'DM Serif Display', serif;
-  font-size: 3em;
-  padding-left: 30px;
-  padding-top: 30%;
-  position: relative;
-}
 .music-video{
   position:relative;
   display:flex;
@@ -192,32 +173,39 @@ background-size: cover;
   max-height:500px;
   margin:0;
   overflow-y:auto;
-  padding: 30px;
-  background-color: aqua;
+  margin-top: 30px;
+  padding-top:20px;
+  padding-bottom: 20px;
+
+}
+.music-section{
+width: 100vw;
+background-color: rgb(245, 196, 84);
 }
 
       /*  S C R O L L - B A R  */
+
       /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 6px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
+/* T R A C K - S C R O L L - B A R */
+/* ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(230, 234, 235); 
   border-radius: 2px;
-}
+} */
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: rgb(253, 134, 114); 
   border-radius: 2px;
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background:rgb(251, 199, 145); 
-}
+} */
 
 /* F O O T E R  */
 footer h1{
@@ -226,6 +214,17 @@ footer h1{
 .social-media-footer{
   background: whitesmoke;
 }
+.social-media-footer ul {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 30vw;
+list-style-type: none;
+margin: auto;
+
+padding: 15px 0 15px 0;
+}
+
 #socialImg{
   height: 25px;
   width: 25px;
@@ -236,17 +235,28 @@ footer h1{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-#socialImg a{
-  text-decoration: none;
+
+
+/* L A N D I N G - P A G E - B A N N E R */
+
+#landing-page-banner{
+  background-color: rgb(245, 196, 84);
+  height: 10vh;
+  width: 100vw;
+  margin: 10px 10px 10px 0;
+  text-align: center;
 }
+ 
+#pattern{
+  margin: 0 auto;
+  background: rgb(51, 101, 190);
+  height: 10px;
+  width: 100%;
+}
+#landing-page-banner h1{
+  color: white;
+  margin: 0 auto;
+  /* padding-left: 15px; */
 
-
-/* 
-height: 25px;
-width: 25px;
-margin: 0 auto;
-padding: 5px;
-display: grid;
-grid-template-rows: 350px 350px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-gap: 10px 10px; */
+  font-size: 2rem;
+}
