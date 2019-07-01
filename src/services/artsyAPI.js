@@ -40,7 +40,8 @@ export const getArtist = async (artist) => {
   getArtsyToken()
     .then(a => {
       artsyToken = a.data.token
-      axios.get("https://api.artsy.net/api/artists/" + artist, { headers: { 'X-Xapp-Token': artsyToken } })
+      api.get("https://api.artsy.net/api/artists/" + artist, { headers: { 'X-Xapp-Token': artsyToken } })
+        // api.get("/artist")
         .then(a => {
           console.log(a)
           return a

@@ -1,3 +1,4 @@
+/* G E N E R A L  - A P P - S T Y L I N G */
 *{
   padding: 0%;
   margin: 0%;
@@ -5,6 +6,30 @@
 .App {
 
   background-color: rgb(224, 183, 243);
+}
+a:visited{ 
+  text-decoration: none;
+}
+a:hover{
+  color: whitesmoke;
+  background: black ;
+  text-decoration: none;
+}
+a:active{
+  color: black;
+  text-decoration: none;
+}
+/* L O G O  */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  word-spacing: normal;
+  letter-spacing: -.02em;
+  line-height: 1.3em;
+  text-transform: none;
+  font-size: 3rem;
+  color: black;
+  text-decoration: solid overline lightseagreen;
 }
 
 #navbar{
@@ -41,3 +66,177 @@ width:100vw;
 display: flex;
 flex-flow: row wrap;
 }
+
+ /* A R T I C L E S */
+ .articles-section{
+   background-color: lightcyan;
+   height: 100%;
+   width: 100%;
+   align-content: space-between;
+ }
+ .hero-img{
+background-image: url('https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+height: 500px;
+width: 100%;
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; 
+ }
+ 
+  .hero-img h1{
+color: white;
+font-family: 'DM Serif Display', serif;
+font-size: 3em;
+padding-left: 30px;
+padding-top: 30%;
+position: relative;
+}
+  .articles-text{
+background-color:whitesmoke;
+height: 100vh;
+width: 80%;
+justify-content: center
+}
+
+/* N E W S - S E C T I O N  */
+.news-section{
+background-image: url("/img/viewport-news-img.jpeg");
+height: 500px;
+width: 100%;
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; 
+}
+
+.news-section h1{
+  color:black;
+  font-family: 'DM Serif Display', serif;
+  font-size: 3em;
+  padding-left: 30px;
+  padding-top: 30%;
+  position: relative;
+}
+
+.news-section h1 a {
+  text-decoration: none;
+}
+
+/*I N S I D E - A R T I C L E S - S E C T I O N */
+.third-div{
+  margin: 0 auto;
+  /* background-color: yellow; */
+  height: 25vh;
+  padding: 15px;
+  border: solid 3px black;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.article-img{
+  margin-left: 60px;
+}
+
+.article-img img{
+float: left;
+object-fit: cover;
+width: 150px;
+height: 150px;
+border-radius: 100%;
+
+}
+
+.article-content{
+background: pink;
+width: 80vw;
+float: right;
+padding: 10px;
+margin: 0 auto;
+}
+
+small{
+  float: right;
+  font-weight: 400px;
+}
+
+
+/* M U S I C - S E C T I O N  */
+.hero-img1{
+background-image: url('/img/section-music.jpeg');
+height: 500px;
+width: 100%;
+background-position: center; 
+background-repeat: no-repeat;
+background-size: cover; 
+}
+
+.hero-img1 h1{
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  font-size: 3em;
+  padding-left: 30px;
+  padding-top: 30%;
+  position: relative;
+}
+.music-video{
+  /* overflow:hidden; */
+  /* position:relative;
+  display: flex;
+  padding: 25px; */
+
+  position:relative;
+  display:flex;
+  top:0;
+  left:0;
+  width:100%;
+  max-height:500px;
+  margin:0;
+  overflow-y:auto; 
+  /* overflow-x:hidden; */
+  /* transform:rotate() translateY(-80px); */
+  /* transform-origin:right top; */
+  
+
+}
+
+
+
+
+
+
+
+
+
+/* F O O T E R  */
+footer h1{
+  text-align: center;
+}
+.social-media-footer{
+  background: whitesmoke;
+}
+#socialImg{
+  height: 25px;
+  width: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#socialImg a{
+  text-decoration: none;
+}
+
+
+/* 
+height: 25px;
+width: 25px;
+margin: 0 auto;
+padding: 5px;
+display: grid;
+grid-template-rows: 350px 350px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 10px 10px; */
