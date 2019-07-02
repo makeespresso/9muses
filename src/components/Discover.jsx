@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { API_GeekJokes } from '../services/API';
+
 import SmallCard from './SmallCard';
 import { getArtsyToken, getArtist, getShows } from '../services/artsyAPI';
 
@@ -20,7 +20,7 @@ export default class GeekJokes extends Component {
       shows: showData,
       gotShows: true
     })
-    console.log(showData)
+    //console.log(showData)
 
     // for (let i = 0; i < 11; i++) {
     //   API_GeekJokes()
@@ -39,13 +39,20 @@ export default class GeekJokes extends Component {
 
   render() {
     return (
+      <>
+        <div className="hero-img">
+          <h1>Discover Events</h1>
+          <img src="/img/art01.jpeg"></img>
+        </div>
+        <div className="discover-info">
+          <h2> Upcoming Events:</h2>
+          <p>Find the best things to do all year with our NYC events calendar of 2019’s coolest events, including parades, concerts, films and art exhibits</p>
+        </div>
+        {this.state.gotShows === true ? <SmallCard data={this.state.shows} /> : <h2>Loading</h2>}
 
-      <div className="hero-img">
-        <h1>Discover Events</h1>
-        <img src="/img/art01.jpeg"></img>
-        <SmallCard />
-      </div>
-
+        <button>Previous</button>
+        <button>Next</button>
+      </>
 
 
     )

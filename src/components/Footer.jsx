@@ -3,7 +3,6 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer >
-      <h1 className="logo">9muses</h1>
       <div className="social-media-footer">
         <ul>
           <li><a href="https://github.com/makeespresso" target="_blank"><img src="img/github.png" id="socialImg" alt="GitHub"></img></a></li>

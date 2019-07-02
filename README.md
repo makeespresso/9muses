@@ -17,7 +17,7 @@ https://developers.artsy.net/
 
 #### Purposes
 * Visitors will receive updated content from different resources.
-* Visitors will be able to search for art and authors
+
 
 #### Components
 9muses has different sections: Discover, Articles, Music and About us, each one of these is links are linked to different routers that ultimately are being called under <Routes /> in the App.js

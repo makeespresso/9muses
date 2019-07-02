@@ -2,10 +2,10 @@
 *{
   padding: 0%;
   margin: 0%;
+
 }
 .App {
-  font-family: 'Assistant', sans-serif;
-  background-color: white;
+  font-family: 'IBM Plex Mono', monospace;
 }
 a:visited{ 
   color: rgb(190, 208, 202);
@@ -70,66 +70,63 @@ a:active{
   border-radius: 100px;
 }
 
-.smallCard{
-background-color: whitesmoke;
-padding: 15px;
-width:100vw;
-display: flex;
-flex-flow: row wrap;
+
+/* D I S C O V E R - S E C T I O N*/
+.discover-info{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* H E A D - A R T I C L E S  */
-.pink{
-  height: 300px;
-  width: 100%;
-  background: pink;
+.discover-info h2{
+  margin: 20px;
+  text-decoration: underline rgb(246, 171, 93);
 }
+
+/* S M A L L - C A R D */
+
+.smallCard{
+  background-color: rbg(245, 244, 241);
+}
+.events-card{
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  max-width: 60vw;
+  border-bottom: gray 1px solid;
+    /* display: flex;
+  flex-flow: row wrap; */
+  }
+.smallCard h2{
+  color: rgb(246, 171, 93);
+}
+.smallCard p{
+color: black;
+}
+.smallCard small{
+font-weight: 700;
+}
+
 
  /* A R T I C L E S */
+
  .articles-section{
    background-color: lightcyan;
    height: 100%;
    width: 100%;
-   align-content: space-between;
  }
- 
-  .articles-text{
-background-color:whitesmoke;
-height: 100vh;
-width: 80%;
-justify-content: center
-}
+.articles-box{
+  align-items: center;
 
-/* N E W S - S E C T I O N  */
-.news-section{
-background-image: url("/img/viewport-news-img.jpeg");
-height: 500px;
-width: 100%;
-background-position: center; /* Center the image */
-background-repeat: no-repeat; /* Do not repeat the image */
-background-size: cover; 
-}
-
-.news-section h1{
-  color:black;
-  font-family: 'DM Serif Display', serif;
-  font-size: 3em;
-  padding-left: 30px;
-  padding-top: 30%;
-  position: relative;
-}
-
-.news-section h1 a {
-  text-decoration: none;
 }
 
 /*I N S I D E - A R T I C L E S - S E C T I O N */
 .third-div{
-  background-color: yellow;
+  background-color: rgb(235, 235, 228);
   height: 25vh;
   padding: 5px;
-  border: solid 3px black;
-  display: block;
+
+  display: flex;
   width: 70vw;
   min-width: 500px;
   margin: 2px 0 0;
@@ -146,11 +143,9 @@ object-fit: cover;
 width: 150px;
 height: 150px;
 border-radius: 100%;
-
 }
 
 .article-content{
-background: pink;
 width: 80vw;
 float: right;
 padding: 10px;
@@ -180,32 +175,8 @@ small{
 }
 .music-section{
 width: 100vw;
-background-color: rgb(245, 196, 84);
+background-color: (235, 235, 228);
 }
-
-      /*  S C R O L L - B A R  */
-
-      /* width */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-/* T R A C K - S C R O L L - B A R */
-/* ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(230, 234, 235); 
-  border-radius: 2px;
-} */
- 
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-  background: rgb(253, 134, 114); 
-  border-radius: 2px;
-} */
-
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background:rgb(251, 199, 145); 
-} */
 
 /* F O O T E R  */
 footer h1{

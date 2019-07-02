@@ -17,6 +17,8 @@ const api = axios.create({
   }
 });
 
+// const randomImg = [paint1.jpeg, paint2.jpeg, paint3.jpeg, paint4.jpeg, paint5.jpeg, paint6.jpeg, paint7.jpeg];
+// console.log(randomImg);
 // export const getInfo = async () => {
 //   return await api.get('/museuminfo')
 //     .then(a => a.data) // questo e quando sta ritornando la data dal request dopo questa e ricevuta, per quello non c'e bisongo di utilizare il await
@@ -40,24 +42,28 @@ const api = axios.create({
 //   }
 // });
 
-export const getArtist = async (artist) => {
+//E N D P O I N T - T O - R E C I E V E - I M G S //
+//SEEMS TO BE DOWN
+export const getShowImages = async () => {
   // api.headers = {
   //   'X-Xapp-Token': getArtsyToken()
   // }
-  const artistData = await api.get("/artists/" + artist)
-  return artistData.data
+  const showImg = await api.get(`/images?show_id=59f0a0c6a09a672d874d3dd1`)
+  //debugger;
+  console.log(showImg)
+  return showImg
 }
 
+//E N D P O I N T - T O - R E C I E V E - S H O W - D A T A //
 export const getShows = async () => {
   // api.headers = {
   //   'X-Xapp-Token': getArtsyToken()
   // }
   const showData = await api.get("/shows?status=upcoming")
-  debugger;
-  console.log(showData.data._embedded.shows)
+  //debugger;
+  //console.log(showData.data._embedded.shows)
   return showData.data._embedded.shows
 }
-
 
 
 // const request = require('superagent');
