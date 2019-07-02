@@ -5,7 +5,7 @@ export default class News extends Component {
     return (
       <section className="news-section">
         <div className="hero-img">
-          <h1><a href="http://viewport.surge.sh/">ViewPort News</a></h1>
+          <h1><a href="http://viewport.surge.sh/">Go to: ViewPort News now!</a></h1>
           <img src="/img/viewport-news-img.jpeg" alt="Viewport-news" />
         </div>
       </section>

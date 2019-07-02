@@ -83,33 +83,23 @@ a:active{
   text-decoration: underline rgb(246, 171, 93);
 }
 
-.smallCard input{
-color: black;
-background: #E9E6DF;
-padding: 0px 30px;
-font-size: 12px;
-margin: 15px;
-justify-items: center;
-font-weight: 500;
-} 
-
-.smallCard input:hover { 
-  background-color: orange;
-}
 /* S M A L L - C A R D */
 
 .smallCard{
   background-color: rbg(245, 244, 241);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.events-card{
-  margin: 0 auto;
+.events-card {
+  /* margin: 0 auto; */
   padding-top: 15px;
   padding-bottom: 15px;
   max-width: 60vw;
   border-bottom: gray 1px solid;
-    /* display: flex;
-  flex-flow: row wrap; */
-  }
+  width: 100%;
+}
+
 .smallCard h2{
   color: rgb(246, 171, 93);
 }
@@ -120,12 +110,28 @@ color: black;
 font-weight: 700;
 }
 
+.smallCard input{
+  color: black;
+  background: #E9E6DF;
+  padding: 0px 30px;
+  font-size: 12px;
+  margin: 15px;
+  justify-items: center;
+  font-weight: 500;
+  margin: auto;
+  } 
+  
+  .smallCard input:hover { 
+    background-color: orange;
+  }
+
  /* A R T I C L E S */
 
  .articles-section{
    background-color: lightcyan;
-   /* height: 100%;
-   width: 100%; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
  }
 .articles-box{
   align-items: center;
