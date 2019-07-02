@@ -60,10 +60,35 @@ export const getShows = async () => {
   //   'X-Xapp-Token': getArtsyToken()
   // }
   const showData = await api.get("/shows?status=upcoming")
+
+  //console.log(showData.data._embedded.shows)
+  console.log(showData.data._links.next.href);
+  // This payload object contains shows array (5) and next  calling for the upcoming events through a href
+  let payload = {
+    shows: showData.data._embedded.shows,
+    next: showData.data._links.next.href
+  }
+  return payload
+}
+
+//This function with the attributes PARAMS, receives the params of Next shows
+//searches and returns the next shows 
+export const getNextShows = async (PARAMS) => {
+  // api.headers = {
+  //   'X-Xapp-Token': getArtsyToken()
+  // }
+  const showData = await api.get(PARAMS)
   //debugger;
   //console.log(showData.data._embedded.shows)
-  return showData.data._embedded.shows
+  //console.log(showData.data._links.next.href);
+  // This payload object contains shows array (5) and next  calling for the upcoming events through a href
+  let payload = {
+    shows: showData.data._embedded.shows,
+    next: showData.data._links.next.href
+  }
+  return payload
 }
+
 
 
 // const request = require('superagent');

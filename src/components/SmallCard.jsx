@@ -1,31 +1,64 @@
 import React, { Component } from 'react'
 
-import { getShowImages } from '../services/artsyAPI';
+import { getNextShows } from '../services/artsyAPI';
 
 export default class SmallCard extends Component {
-  async componentDidMount() {
-    let data = await getShowImages()
-    console.log(data);
+  constructor() {
+    super();
+    this.state = {
+      shows: [],
+      gotShows: false
+    }
   }
+
+  // this is a function that we will use at the input property onClick.
+  next = async (PARAMS) => {
+    PARAMS = PARAMS.replace("https://api.artsy.net/api", "")
+    console.log(PARAMS)
+    const showData = await getNextShows(PARAMS)
+    this.setState({
+      shows: showData.shows,
+      gotShows: true
+    })
+    console.log(this.state);
+  }
+
+
+
+  //This is render has upcoming and next shows input .
   render() {
-    //let jokesArray = Object.values(this.props)  //i need to take out the values of this props. <- not using this bcs returns one array inside another one [[...]]
-    // console.log(this.props.jokes)
-    let { data } = this.props
-    console.log(data)      // <<== type will be used to have a conditional rendering of the data
+    //retriving props data
+    //console.log(this.props.data.shows)
+    let { shows, next } = this.props.data
+    //console.log(shows) // <<== type will be used to have a conditional rendering of the data
     return (
       <div className="smallCard">
         {
-          data.map(show => (
+          shows.map(show => (
             // console.log(show.name, show.description, show.status)
             <div className="events-card" key={show.id}>
               <h2>{show.name}</h2>
               <p>{show.description}</p>
               <small>Status: {show.status}</small>
               <br></br>
-              {/* <img src={show._links.images.href} /> */}
             </div>
           ))
         }
+        {this.state.gotShows === true ?
+          this.state.shows.map(show => (
+            // console.log(show.name, show.description, show.status)
+            <div className="events-card" key={show.id}>
+              <h2>{show.name}</h2>
+              <p>{show.description}</p>
+              <small>Status: {show.status}</small>
+              <br></br>
+            </div>
+          ))
+          :
+          <h3>see more</h3>
+        }
+        {/* This is the onClick event that has an annonymus function so we can send attributes to the _NEXT_ function, if we do not have an annonymus function {this.next} and we wouldn't be able to send the attrs with the parentesis. */}
+        {this.state.gotShows === true ? null : <input type="button" onClick={() => this.next(next)} value="Show 5 more" />}
 
       </div>
     )

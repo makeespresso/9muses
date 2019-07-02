@@ -49,9 +49,6 @@ export default class GeekJokes extends Component {
           <p>Find the best things to do all year with our NYC events calendar of 2019’s coolest events, including parades, concerts, films and art exhibits</p>
         </div>
         {this.state.gotShows === true ? <SmallCard data={this.state.shows} /> : <h2>Loading</h2>}
-
-        <button>Previous</button>
-        <button>Next</button>
       </>
 
 
