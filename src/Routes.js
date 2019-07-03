@@ -5,10 +5,6 @@ import Discover from './components/Discover';
 import FillArticles from './components/FillArticles';
 import News from './components/News';
 import Music from './components/Music';
-// import Home from './components/Home';
-// import AllB from './components/beers/All';
-// import RandomB from './components/beers/Random';
-// import NewB from './components/beers/New';
 
 const Routes = () => {
   return (

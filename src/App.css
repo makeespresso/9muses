@@ -2,36 +2,42 @@
 *{
   padding: 0%;
   margin: 0%;
-
 }
+
 .App {
   font-family: 'IBM Plex Mono', monospace;
 }
+
 a:visited{ 
   color: rgb(190, 208, 202);
 }
+
 a:hover{
   color: rgb(190, 208, 202);
   text-decoration: none;
 }
+
 a:active{
   color: black;
   text-decoration: none;
 }
+
 .hero-img img{
   height: 500px;
   width: 100%;
   object-fit: cover; 
-  }
+}
   
-  .hero-img h1{
-    color: white;
-    font-family: 'DM Serif Display', serif;
-    font-size: 3em;
-    padding-top: 350px;
-    position: absolute;
+.hero-img h1{
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  font-size: 3em;
+  padding-top: 350px;
+  position: absolute;
   }
-/* L O G O  */
+
+/* L O G O */
+
 .logo {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
@@ -64,14 +70,38 @@ a:active{
   height: 50%;
   width: 100%;
 }
+
 .smallImg{
   width: 128px;
   height: auto;
   border-radius: 100px;
 }
 
+/* L A N D I N G - P A G E - B A N N E R */
 
-/* D I S C O V E R - S E C T I O N*/
+#landing-page-banner{
+  background-color: rgb(245, 196, 84);
+  height: 10vh;
+  width: 100vw;
+  margin: 10px 10px 10px 0;
+  text-align: center;
+}
+ 
+#pattern{
+  margin: 0 auto;
+  background: rgb(51, 101, 190);
+  height: 10px;
+  width: 100%;
+}
+
+#landing-page-banner h1{
+  color: white;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+/* D I S C O V E R - S E C T I O N */
+
 .discover-info{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -91,8 +121,8 @@ a:active{
   flex-direction: column;
   align-items: center;
 }
+
 .events-card {
-  /* margin: 0 auto; */
   padding-top: 15px;
   padding-bottom: 15px;
   max-width: 60vw;
@@ -103,11 +133,18 @@ a:active{
 .smallCard h2{
   color: rgb(246, 171, 93);
 }
+
 .smallCard p{
-color: black;
+  color: black;
 }
+
 .smallCard small{
-font-weight: 700;
+  font-weight: 700;
+}
+
+.smallCard h4{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .smallCard input{
@@ -121,23 +158,25 @@ font-weight: 700;
   margin: auto;
   } 
   
-  .smallCard input:hover { 
-    background-color: orange;
-  }
+.smallCard input:hover { 
+  background-color: orange;
+}
 
  /* A R T I C L E S */
 
- .articles-section{
-   background-color: lightcyan;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+.articles-section{
+  background-color: lightcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  }
+
 .articles-box{
   align-items: center;
 }
 
-/*I N S I D E - A R T I C L E S - S E C T I O N */
+/* I N S I D E - A R T I C L E S - S E C T I O N */
+
 .third-div{
   width: 100%;
   display: flex;
@@ -157,18 +196,18 @@ font-weight: 700;
 }
 
 .article-img img{
-float: left;
-object-fit: cover;
-width: 150px;
-height: 150px;
-border-radius: 100%;
+  float: left;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
 }
 
 .article-content{
-width: 80vw;
-float: right;
-padding: 10px;
-margin: 0 auto;
+  width: 80vw;
+  float: right;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 small{
@@ -190,29 +229,28 @@ small{
   margin-top: 30px;
   padding-top:20px;
   padding-bottom: 20px;
-
 }
+
 .music-section{
-width: 100vw;
-background-color: (235, 235, 228);
+  width: 100vw;
+  background-color: (235, 235, 228);
 }
 
 /* F O O T E R  */
-footer h1{
-  text-align: center;
-}
-.social-media-footer{
-  background: whitesmoke;
-}
-.social-media-footer ul {
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 30vw;
-list-style-type: none;
-margin: auto;
 
-padding: 15px 0 15px 0;
+footer{
+  text-align: center;
+  margin-top: 25px;
+}
+
+.social-media-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+  list-style-type: none;
+  margin: auto;
+  padding: 15px 0 15px 0;
 }
 
 #socialImg{
@@ -227,26 +265,4 @@ padding: 15px 0 15px 0;
 }
 
 
-/* L A N D I N G - P A G E - B A N N E R */
 
-#landing-page-banner{
-  background-color: rgb(245, 196, 84);
-  height: 10vh;
-  width: 100vw;
-  margin: 10px 10px 10px 0;
-  text-align: center;
-}
- 
-#pattern{
-  margin: 0 auto;
-  background: rgb(51, 101, 190);
-  height: 10px;
-  width: 100%;
-}
-#landing-page-banner h1{
-  color: white;
-  margin: 0 auto;
-  /* padding-left: 15px; */
-
-  font-size: 2rem;
-}

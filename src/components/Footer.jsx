@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Footer() {
   return (
@@ -12,6 +12,7 @@ export default function Footer() {
           <li><a href="http://makeespresso.co/" target="_blank"><img src="img/makeespresso.png" id="socialImg" alt="Makeespresso"></img></a></li>
           <li><a href="https://www.pinterest.com/" target="_blank"><img src="img/pinterest.png" id="socialImg" alt="Pinterest"></img></a></li>
         </ul >
+        <p>Makeespresso, 2019 &hearts;</p>
       </div >
     </footer >
   )

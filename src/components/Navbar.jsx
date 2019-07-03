@@ -11,12 +11,7 @@ export default () => {
         <Link to="/Music">Music</Link>
         <Link to="/Articles">Articles</Link>
         <Link to="/News">News</Link>
-
       </section>
     </div>
   )
 }
-
-
-
-// IN ROUTES WE USE EXACT PATHS // 

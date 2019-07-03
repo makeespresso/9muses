@@ -20,21 +20,36 @@ https://developers.artsy.net/
 
 
 #### Components
-9muses has different sections: Discover, Articles, Music and About us, each one of these is links are linked to different routers that ultimately are being called under <Routes /> in the App.js
+9muses has different sections: a landing page, Discover, Music, Articles and News, each one of these is links are linked to different routers that ultimately are being called under <Routes /> in the App.js
 
 #### Features
 * User friendly designs
-* Search bar for authors, categories and titles 
+* User can see what upcoming art events are 
+* Listen music from selected playlists
+* Read Articles
+* Visit ViewPort News portal
 
 ### Wireframes
-* Main/landing page
-<img width="1024" alt="page1" src="https://user-images.githubusercontent.com/20978259/60345209-7b036c00-9986-11e9-8bec-63e01ea56ff1.png">
+* Main/landing page:
+<img width="1093" alt="landingpage" src="https://user-images.githubusercontent.com/20978259/60599645-d49bda00-9d7c-11e9-980e-db89d938ef99.png">
 
-* Art Section 
-<img width="1024" alt="page3" src="https://user-images.githubusercontent.com/20978259/60362285-7c488f00-99ae-11e9-87c3-6dcec2fedcc7.png">
+* Discover Section:
+<img width="1093" alt="discoverpage" src="https://user-images.githubusercontent.com/20978259/60599677-dc5b7e80-9d7c-11e9-91d4-26e0782cfeb8.png">
 
-* Discover Section
-<img width="1093" alt="page2" src="https://user-images.githubusercontent.com/20978259/60345618-6e334800-9987-11e9-9e68-77f9ec1c9e06.png">
 
-* Music Section
-<img width="1024" alt="page4 " src="https://user-images.githubusercontent.com/20978259/60364245-b8cab980-99b3-11e9-9357-9e01282b8a75.png">
+* Music Section:
+<img width="1093" alt="musicpage" src="https://user-images.githubusercontent.com/20978259/60599703-e7161380-9d7c-11e9-8259-e1d9ce5b8a4e.png">
+
+
+* Articles Section:
+<img width="1093" alt="articlespage" src="https://user-images.githubusercontent.com/20978259/60599718-f006e500-9d7c-11e9-8991-533e4df807d6.png">
+
+
+* News Section:
+<img width="1093" alt="newspage" src="https://user-images.githubusercontent.com/20978259/60599729-f5fcc600-9d7c-11e9-97cf-1c04ae6704d1.png">
+
+
+## Directions 
+
+* Fork and clone this repo
+* npm install 
