@@ -184,18 +184,11 @@ a:active{
   width: 100%;
   display: flex;
   flex-flow: row;
-  max-width: 1200px;
+  max-width: 80vh;
   margin-top: 50px;
   align-content: center;
   justify-content: space-between;
   border-bottom: 1px solid black;
-/*  height: 25vh;
-  padding: 5px;
-  display: flex;
-  width: 70vw;
-  min-width: 500px;
-  margin: 2px 0 0;
-  overflow: hidden; */
 }
 
 .article-img img{
