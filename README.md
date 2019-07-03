@@ -55,4 +55,7 @@ https://developers.artsy.net/
 * Go to your terminal 
 * Followed by npm install 
 * To run it, type npm start
+* Register for an API key at https://developers.artsy.net
+  - it is important that you register under Public API 
+  - Read Documentation carefully: https://developers.artsy.net/docs 
 * If you have any feedback, suggestions, please make a pull request.
