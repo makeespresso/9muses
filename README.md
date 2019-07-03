@@ -52,4 +52,7 @@ https://developers.artsy.net/
 ## Directions 
 
 * Fork and clone this repo
-* npm install 
+* Go to your terminal 
+* Followed by npm install 
+* To run it, type npm start
+* If you have any feedback, suggestions, please make a pull request.
