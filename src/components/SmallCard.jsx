@@ -11,10 +11,10 @@ export default class SmallCard extends Component {
   }
 
   // this is a function that we will use at the input property onClick.
-  next = async (PARAMS) => {
-    PARAMS = PARAMS.replace("https://api.artsy.net/api", "")
-    console.log(PARAMS)
-    const showData = await getNextShows(PARAMS)
+  next = async (params) => {
+    params = params.replace("https://api.artsy.net/api", "")
+    console.log(params)
+    const showData = await getNextShows(params)
     this.setState({
       shows: showData.shows,
       gotShows: true
@@ -42,7 +42,8 @@ export default class SmallCard extends Component {
           ))
         }
 
-        {/*In this section, the console returns true when we have data. Here I'm conditionally renderning  that if it is true, load the shows and will be displayed in a div called events-card and from there we are calling keys from the api */}
+        {/*In this section, the console returns true when we have data. Here I'm conditionally renderning  that if it is true, 
+      load the shows and will be displayed in a div called events-card and from there we are calling keys from the api */}
         {this.state.gotShows === true ?
           this.state.shows.map(show => (
             // console.log(show.name, show.description, show.status)
@@ -56,7 +57,8 @@ export default class SmallCard extends Component {
           :
           <h4>See more</h4>
         }
-        {/* This is the onClick event that has an annonymus function so we can send attributes to the _NEXT_ function, if we do not have an annonymus function {this.next} and we wouldn't be able to send the attrs with the parentesis. */}
+        {/* This is the onClick event that has an annonymus function so we can send attributes to the _NEXT_ function, 
+        if we do not have an annonymus function {this.next} and we wouldn't be able to send the attrs with the parentesis. */}
         {this.state.gotShows === true ? null : <input type="button" onClick={() => this.next(next)} value="Show" />}
       </div>
     )

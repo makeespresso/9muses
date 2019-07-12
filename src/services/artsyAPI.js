@@ -10,11 +10,8 @@ const api = axios.create({
 
 
 //E N D P O I N T - T O - R E C I E V E - I M G S //
-//SEEMS TO BE DOWN
+
 export const getShowImages = async () => {
-  // api.headers = {
-  //   'X-Xapp-Token': getArtsyToken()
-  // }
   const showImg = await api.get(`/images?show_id=59f0a0c6a09a672d874d3dd1`)
   //debugger;
   console.log(showImg)
@@ -36,8 +33,8 @@ export const getShows = async () => {
 
 //This function with the attributes PARAMS, receives the params of _Next_ shows
 //searches and returns the next shows:
-export const getNextShows = async (PARAMS) => {
-  const showData = await api.get(PARAMS)
+export const getNextShows = async (params) => {
+  const showData = await api.get(params)
   //debugger;
   //console.log(showData.data._embedded.shows)
   //console.log(showData.data._links.next.href);

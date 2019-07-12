@@ -43,10 +43,22 @@ export default class FillArticles extends Component {
               <img src="/img/art3.png" alt="stockimg"></img>
             </div>
           </div>
+
+
+          <div className="third-div">
+            <div className="article-content">
+              <h1>6 Fears You'll Have as an Older Career Changer (and How to Overcome Them)</h1>
+              <p>Maybe you’re no longer happy on your current path. Maybe you’re feeling drawn to something new and different. Whatever the reason, you’re thinking about changing careers. The thing is, you’re years (or decades!) into your career, having spent most of your 20s and 30s (or 40s, or more!) getting to this exact point.</p>
+              <small><a href="https://www.themuse.com/advice/fears-career-change-at-40-50" target="_blank">Read more...</a></small>
+            </div>
+            <div className="article-img">
+              <img src="/img/art4.jpeg" alt="stockimg"></img>
+            </div>
+          </div>
+
+
         </div>
-
       </div>
-
     )
   }
 }

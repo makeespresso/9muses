@@ -59,3 +59,7 @@ https://developers.artsy.net/
   - it is important that you register under Public API 
   - Read Documentation carefully: https://developers.artsy.net/docs 
 * If you have any feedback, suggestions, please make a pull request.
+
+#POST MVP
+- Each section, will render infomation from the API.
+

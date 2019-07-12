@@ -38,9 +38,6 @@ export default class GeekJokes extends Component {
   }
 }
 
-
-
-//ASYNC WITH COMPONENT DID MOUNT DOESNT SEND STUFF ?
 //discover component did mount, do runs the getShows api from services/ ArtsyAPI
 //Artsy API gets a new token and request the data from the shows, THEN it does console.log the information from the aAPI and sends it back with a return
-//Back in component did mount, the information retrieved from artsy does not get here, seems to be an asynchrnus issue, plis send jalp
+//Back in component did mount, the information retrieved from artsy does not get here, seems to be an asynchrnus issue, plis send jeeeelp
